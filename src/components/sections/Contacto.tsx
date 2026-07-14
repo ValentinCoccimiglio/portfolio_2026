@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-28"
+      className="py-20 sm:py-24 lg:py-28"
     >
       <Container>
 
@@ -29,7 +29,7 @@ export default function Contact() {
           </p>
 
           <a
-            href="coccimigliovalentin11@gmail.com"
+            href="mailto:coccimigliovalentin11@gmail.com"
             className="
               mt-10
               inline-flex
@@ -50,11 +50,12 @@ export default function Contact() {
             Enviar un correo
           </a>
 
-          <div className="mt-10 flex justify-center gap-8">
+          <div className="mt-10 flex flex-col items-center gap-6 sm:flex-row sm:justify-center">
 
             <a
               href="https://www.linkedin.com/in/valentin-coccimiglio-a87230345/"
               target="_blank"
+              rel="noreferrer"
               className="text-zinc-400 transition hover:text-white"
             >
               <FaLinkedin size={22} />
@@ -63,6 +64,7 @@ export default function Contact() {
             <a
               href="https://github.com/ValentinCoccimiglio"
               target="_blank"
+              rel="noreferrer"
               className="text-zinc-400 transition hover:text-white"
             >
               <FaGithub size={22} />

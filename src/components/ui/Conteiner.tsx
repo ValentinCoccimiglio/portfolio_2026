@@ -12,7 +12,7 @@ export default function Container({
   maxWidth = "max-w-7xl",
 }: ContainerProps) {
   return (
-    <div className={`mx-auto w-full ${maxWidth} px-6 lg:px-8 ${className}`}>
+    <div className={`mx-auto w-full ${maxWidth} px-4 sm:px-6 lg:px-8 ${className}`}>
       {children}
     </div>
   );

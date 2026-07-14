@@ -7,7 +7,7 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="section-gradient relative overflow-hidden py-28"
+      className="section-gradient relative overflow-hidden py-20 sm:py-24 lg:py-28"
     >
       <Container>
         <SectionTitle

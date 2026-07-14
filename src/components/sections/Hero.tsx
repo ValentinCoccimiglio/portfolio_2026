@@ -7,11 +7,11 @@ import { technologies } from "@/data/technologies";
 
 export default function Hero() {
   return (
-    <section className="section-gradient section-hero relative flex min-h-screen items-center overflow-hidden">
+    <section className="section-gradient section-hero relative flex min-h-screen items-center overflow-hidden py-20 sm:py-24 lg:py-28">
       <div className="aurora-background" aria-hidden="true" />
 
-      <div className="relative z-10 mx-auto w-full max-w-[1500px] px-8">
-        <div className="grid items-center gap-40 lg:grid-cols-[1.15fr_0.85fr]">
+      <div className="relative z-10 mx-auto w-full max-w-[1500px] px-4 sm:px-6">
+        <div className="grid items-center gap-24 lg:gap-40 lg:grid-cols-[1.15fr_0.85fr]">
           {" "}
           {/* LEFT */}
           <motion.div
@@ -21,7 +21,7 @@ export default function Hero() {
           >
             <Badge text="Frontend Developer" />
 
-            <h1 className="mt-8 text-6xl font-black leading-none tracking-tight md:text-8xl">
+            <h1 className="mt-8 text-4xl font-black leading-tight tracking-tight sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
               Creando
               <br />
               <span className="bg-gradient-to-r from-cyan-300 via-blue-400 to-violet-400 bg-clip-text text-transparent">
@@ -31,12 +31,11 @@ export default function Hero() {
               Digitales
             </h1>
 
-            <p className="mt-8 max-w-xl text-xl leading-9 text-zinc-400">
+            <p className="mt-8 max-w-xl text-base leading-8 text-zinc-400 sm:text-lg sm:leading-9">
               Desarrollo interfaces modernas, rápidas y escalables con React, Next.js y TypeScript, priorizando una experiencia de usuario excepcional.
             </p>
 
-
-            <div className="mt-10 flex flex-wrap gap-6">
+            <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center">
               <a
                 href="#projects"
                 className="group inline-flex items-center text-base font-medium text-white/90 transition hover:text-cyan-300"
@@ -58,10 +57,9 @@ export default function Hero() {
                 </span>
               </a>
             </div>
-
           </motion.div>
           {/* RIGHT */}
-          <div className="mt-12 lg:mt-20">
+          <div className="mt-10 lg:mt-20">
             <DeveloperCard technologies={technologies} />
           </div>
         </div>

@@ -29,7 +29,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="section-gradient section-about relative overflow-hidden py-32"
+      className="section-gradient section-about relative overflow-hidden py-20 sm:py-24 lg:py-32"
     >
       <Container>
         <SectionTitle

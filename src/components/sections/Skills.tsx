@@ -6,7 +6,7 @@ import { skillCategories } from "@/data/skills";
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-32">
+    <section id="skills" className="py-20 sm:py-24 lg:py-32">
       <Container>
 
         <SectionTitle
@@ -15,7 +15,7 @@ export default function Skills() {
           description="Las tecnologías y herramientas que utilizo para desarrollar interfaces modernas."
         />
 
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {skillCategories.map((category) => (
             <SkillGroup
               key={category.title}
