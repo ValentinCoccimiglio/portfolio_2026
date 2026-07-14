@@ -1,0 +1,19 @@
+import { ReactNode } from "react";
+
+interface ContainerProps {
+  children: ReactNode;
+  className?: string;
+  maxWidth?: string;
+}
+
+export default function Container({
+  children,
+  className = "",
+  maxWidth = "max-w-7xl",
+}: ContainerProps) {
+  return (
+    <div className={`mx-auto w-full ${maxWidth} px-6 lg:px-8 ${className}`}>
+      {children}
+    </div>
+  );
+}
